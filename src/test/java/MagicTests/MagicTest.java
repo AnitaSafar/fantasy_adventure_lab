@@ -1,6 +1,5 @@
 package MagicTests;
 
-import Attacker.Attacker;
 import Magic.Magic;
 import org.junit.Before;
 import org.junit.Test;
