@@ -1,4 +1,3 @@
-import Attacker.Barbarian;
 import Attacker.Dwarf;
 import org.junit.Before;
 import org.junit.Test;
