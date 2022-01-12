@@ -9,7 +9,7 @@ public class DwarfTest {
 
     @Before
     public void before() {
-        dwarf = new Dwarf("Balfazaar", 1000);
+        dwarf = new Dwarf("Balfazaar", 1000, 100);
     }
 
     @Test
@@ -32,5 +32,10 @@ public class DwarfTest {
     public void canSetName() {
         dwarf.setName("Pendragon");
         assertEquals("Pendragon", dwarf.getName());
+    }
+
+    @Test
+    public void canGetAttack() {
+        assertEquals(150, dwarf.getAttack(), 0.0);
     }
 }

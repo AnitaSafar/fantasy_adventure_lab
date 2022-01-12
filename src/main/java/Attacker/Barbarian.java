@@ -1,11 +1,9 @@
 package Attacker;
 
-import Player.Player;
+public class Barbarian extends Attacker {
 
-public class Barbarian extends Player {
-
-    public Barbarian(String name, int health) {
-        super(name, health);
+    public Barbarian(String name, int health, double attack) {
+        super(name, health, attack);
     }
 
 

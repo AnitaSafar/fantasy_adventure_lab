@@ -10,7 +10,7 @@ public class BarbarianTest {
 
     @Before
     public void before() {
-        barbarian = new Barbarian("Zanzibar", 1000);
+        barbarian = new Barbarian("Zanzibar", 1000, 300);
     }
 
     @Test
