@@ -1,10 +1,13 @@
 package Magic;
 
+import Creature.Creature;
+
 public class Wizard extends Magic{
 
+    public Creature creature;
 
-    public Wizard(String name, int health, double spell) {
-        super(name, health, spell);
+    public Wizard(String name, int health, double spell, Creature creature) {
+        super(name, health, spell, creature);
     }
 
     public int getHealth() {

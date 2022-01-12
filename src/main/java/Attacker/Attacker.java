@@ -1,20 +1,21 @@
 package Attacker;
 import Player.Player;
+import Weapons.Weapon;
 
 public class Attacker extends Player {
 
-    public double attack;
+    public Weapon weapon;
 
-    public Attacker(String name, int health, double attack) {
+    public Attacker(String name, int health, Weapon weapon) {
         super(name, health);
-        this.attack = attack;
+        this.weapon = weapon;
     }
 
     public double getAttackPower() {
-        return this.attack;
+        return this.weapon.power;
     }
 
     public void setAttack(double power) {
-        this.attack = power;
+        this.weapon.power = power;
     }
 }

@@ -1,6 +1,7 @@
 package Healer;
 
 import Attacker.Dwarf;
+import Weapons.Weapon;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -14,7 +15,7 @@ public class ClericTest {
     @Before
     public void before() {
         cleric = new Cleric("Mackie", 1000, 150);
-        dwarf = new Dwarf("Harry", 1000, 200);
+        dwarf = new Dwarf("Harry", 1000, Weapon.AXE);
     }
 
     @Test

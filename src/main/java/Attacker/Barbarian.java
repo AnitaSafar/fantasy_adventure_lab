@@ -1,11 +1,13 @@
 package Attacker;
 
+import Weapons.Weapon;
+
 public class Barbarian extends Attacker {
 
+    protected Weapon weapon;
 
-
-    public Barbarian(String name, int health, double attack) {
-        super(name, health, attack);
+    public Barbarian(String name, int health, Weapon weapon) {
+        super(name, health, weapon);
     }
 
     public double getAttack() {

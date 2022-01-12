@@ -1,5 +1,6 @@
 package MagicTests;
 
+import Creature.Creature;
 import Magic.Warlock;
 import org.junit.Before;
 import org.junit.Test;
@@ -12,7 +13,7 @@ public class WarlockTest {
 
     @Before
     public void before() {
-        warlock = new Warlock("Jebediah", 1000, 200);
+        warlock = new Warlock("Jebediah", 1000, 200, Creature.SPRITE);
     }
 
     @Test

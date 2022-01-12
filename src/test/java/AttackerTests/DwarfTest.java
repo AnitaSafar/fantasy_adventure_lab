@@ -1,6 +1,7 @@
 package AttackerTests;
 
 import Attacker.Dwarf;
+import Weapons.Weapon;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,7 +12,7 @@ public class DwarfTest {
 
     @Before
     public void before() {
-        dwarf = new Dwarf("Balfazaar", 1000, 100);
+        dwarf = new Dwarf("Balfazaar", 1000, Weapon.AXE);
     }
 
     @Test
@@ -38,7 +39,7 @@ public class DwarfTest {
 
     @Test
     public void canGetAttack() {
-        assertEquals(120, dwarf.getAttack(), 0.0);
+        assertEquals(180, dwarf.getAttack(), 0.0);
     }
 
 }

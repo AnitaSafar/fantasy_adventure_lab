@@ -1,5 +1,6 @@
 package MagicTests;
 
+import Creature.Creature;
 import Magic.Wizard;
 import org.junit.Before;
 import org.junit.Test;
@@ -12,7 +13,7 @@ public class WizardTest {
 
     @Before
     public void before() {
-        wizard = new Wizard("Gandalf", 1000, 300);
+        wizard = new Wizard("Gandalf", 1000, 300, Creature.DRAGON);
     }
 
     @Test

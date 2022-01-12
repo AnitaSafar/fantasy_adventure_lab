@@ -1,10 +1,12 @@
 package Attacker;
 
 
+import Weapons.Weapon;
+
 public class Dwarf extends Attacker {
 
-    public Dwarf(String name, int health, double attack) {
-        super(name, health, attack);
+    public Dwarf(String name, int health, Weapon weapon) {
+        super(name, health, weapon);
     }
 
     public double getAttack() {

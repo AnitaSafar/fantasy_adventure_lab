@@ -1,6 +1,7 @@
 package AttackerTests;
 
 import Attacker.Attacker;
+import Weapons.Weapon;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,7 +13,7 @@ public class AttackerTest {
 
     @Before
     public void before() {
-        attacker = new Attacker("Horatio", 1000, 200);
+        attacker = new Attacker("Horatio", 1000, Weapon.SWORD);
     }
 
     @Test

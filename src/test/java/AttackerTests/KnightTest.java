@@ -1,6 +1,7 @@
 package AttackerTests;
 
 import Attacker.Knight;
+import Weapons.Weapon;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,7 +13,7 @@ public class KnightTest {
 
     @Before
     public void before() {
-        knight = new Knight("Jamie", 1000, 100);
+        knight = new Knight("Jamie", 1000, Weapon.SWORD);
     }
 
     @Test
@@ -39,6 +40,6 @@ public class KnightTest {
 
     @Test
     public void canAttack() {
-        assertEquals(100, knight.getAttack(), 0.0);
+        assertEquals(300, knight.getAttack(), 0.0);
     }
 }

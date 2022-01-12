@@ -1,6 +1,7 @@
 package AttackerTests;
 
 import Attacker.Barbarian;
+import Weapons.Weapon;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,7 +13,7 @@ public class BarbarianTest {
 
     @Before
     public void before() {
-        barbarian = new Barbarian("Zanzibar", 1000, 300);
+        barbarian = new Barbarian("Zanzibar", 1000, Weapon.CLUB);
     }
 
     @Test
@@ -39,6 +40,6 @@ public class BarbarianTest {
 
     @Test
     public void canAttack() {
-        assertEquals(450, barbarian.getAttack(), 0.0);
+        assertEquals(150, barbarian.getAttack(), 0.0);
     }
 }
