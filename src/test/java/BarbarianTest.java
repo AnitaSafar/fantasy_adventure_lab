@@ -22,4 +22,16 @@ public class BarbarianTest {
     public void hasHealth() {
         assertEquals(1000, barbarian.getHealth());
     }
+
+    @Test
+    public void canSetHealth() {
+        barbarian.setHealth(900);
+        assertEquals(900, barbarian.getHealth());
+    }
+
+    @Test
+    public void canSetName() {
+        barbarian.setName("Dave");
+        assertEquals("Dave", barbarian.getName());
+    }
 }
