@@ -18,5 +18,8 @@ public class BarbarianTest {
         assertEquals("Zanzibar", barbarian.getName());
     }
 
-
+    @Test
+    public void hasHealth() {
+        assertEquals(1000, barbarian.getHealth());
+    }
 }
