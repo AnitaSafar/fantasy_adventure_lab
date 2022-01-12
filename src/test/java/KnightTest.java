@@ -34,4 +34,9 @@ public class KnightTest {
         knight.setName("Aragon");
         assertEquals("Aragon", knight.getName());
     }
+
+    @Test
+    public void canAttack() {
+        assertEquals(100, knight.getAttack(), 0.0);
+    }
 }

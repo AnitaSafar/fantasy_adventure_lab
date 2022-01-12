@@ -15,12 +15,12 @@ public class AttackerTest {
 
     @Test
     public void hasAttack() {
-        assertEquals(300, attacker.getAttack(), 0.0);
+        assertEquals(200, attacker.getAttackPower(), 0.0);
     }
 
     @Test
     public void canSetAttack() {
         attacker.setAttack(300);
-        assertEquals(300, attacker.getAttack(), 0.0);
+        assertEquals(300, attacker.getAttackPower(), 0.0);
     }
 }

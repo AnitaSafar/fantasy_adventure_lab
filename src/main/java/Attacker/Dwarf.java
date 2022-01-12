@@ -7,5 +7,8 @@ public class Dwarf extends Attacker {
         super(name, health, attack);
     }
 
+    public double getAttack() {
+        return getAttackPower() * 1.2;
+    }
 
 }

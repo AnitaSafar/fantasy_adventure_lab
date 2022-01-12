@@ -34,4 +34,9 @@ public class BarbarianTest {
         barbarian.setName("Dave");
         assertEquals("Dave", barbarian.getName());
     }
+
+    @Test
+    public void canAttack() {
+        assertEquals(450, barbarian.getAttack(), 0.0);
+    }
 }

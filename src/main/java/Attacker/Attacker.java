@@ -7,10 +7,10 @@ public class Attacker extends Player {
 
     public Attacker(String name, int health, double attack) {
         super(name, health);
-        this.attack = attack * 1.5;
+        this.attack = attack;
     }
 
-    public double getAttack() {
+    public double getAttackPower() {
         return this.attack;
     }
 

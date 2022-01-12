@@ -36,6 +36,8 @@ public class DwarfTest {
 
     @Test
     public void canGetAttack() {
-        assertEquals(150, dwarf.getAttack(), 0.0);
+        assertEquals(120, dwarf.getAttack(), 0.0);
     }
+
 }
+
