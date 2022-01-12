@@ -2,8 +2,8 @@ package Player;
 
 public abstract class Player {
 
-    private String name;
-    private int health;
+    protected String name;
+    protected int health;
 
     public Player(String name, int health) {
         this.name = name;
