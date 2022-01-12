@@ -1,3 +1,5 @@
+package AttackerTests;
+
 import Attacker.Barbarian;
 import org.junit.Before;
 import org.junit.Test;
